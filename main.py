@@ -13,16 +13,18 @@ def get_book_text(book_path="./README.md"):
 
 
 def main():
+    print(f"====== {sys.argv[1]} REPORT ======")
     if len(sys.argv) == 2:
         book = sys.argv[1]
-
         get_total_words(get_book_text(book))
         sorted_chars = chars_dict_to_sorted_list(get_total_chars(get_book_text(book)))
         for chars in sorted_chars:
             if not chars["char"].isalpha():
                 continue
             print(f"{chars['char']}: {chars['num']}")
+        print("===================================")
     else:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
+
 main()
