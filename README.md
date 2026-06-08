@@ -1,11 +1,8 @@
 # bookbot
 ---
 
-So you tired manually counting each letters and words in the book?
-*Bookbot* will help you to your weird problems!
-It can do:
-- can count all words
-- can count all characters
+This CLI tool will extract useful data from a text file like word count and character count.
+This project is a straight forward version of ‘wc’ command, because it outputs word count and character count by default. This is useful for piping commands and it follows the Unix Philisophy of one tool with specific goal.
 
 ## Motivation
 
